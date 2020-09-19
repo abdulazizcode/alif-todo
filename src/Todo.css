@@ -1,0 +1,17 @@
+.flex--container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.lists--contatiner {
+  width: 80%;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  padding: 8px;
+}
