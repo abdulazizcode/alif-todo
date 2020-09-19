@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 const AddTask = ({addTask}) => {
     const classes = useStyles();
-    const [getInput, setInput] = useState("");
+    const [getInput, setInput] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -51,8 +51,7 @@ const AddTask = ({addTask}) => {
                 color="primary"
                 className={classes.button}
                 endIcon={<AddCircleOutlineIcon />}
-              >
-                ADD
+              >ADD
               </Button>
             </div>
           </div>

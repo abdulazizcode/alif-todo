@@ -6,20 +6,16 @@ import { makeStyles } from "@material-ui/core/styles";
 import DeleteIcon from '@material-ui/icons/Delete';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    "& .MuiTextField-root": {
-      margin: theme.spacing(5)
-    },
     button: {
       margin: theme.spacing(1)
     }
   }
-}));
+));
 
 
 const Todo = () =>{
   const classes = useStyles();
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState([{ text: "Default Todos"}, { text: "First Todo"}])
 
   const addTask = text => setTasks([...tasks, { text }]);
   
